@@ -1,0 +1,46 @@
+:root {
+  --night: #070b1a;
+  --blue: #13213f;
+  --ink: #04050a;
+  --light: #ffe2a8;
+  --amber: #ffb547;
+  --rain: #9fb4d8;
+  --text: #e9e6df;
+  --muted: #9aa3b8;
+}
+* { box-sizing: border-box; }
+html { background: var(--ink); }
+body {
+  margin: 0;
+  color: var(--text);
+  background: radial-gradient(ellipse at 50% 0%, var(--blue) 0%, var(--night) 45%, var(--ink) 100%) fixed;
+  font: 17px/1.65 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+}
+a { color: var(--light); }
+a:hover { color: var(--amber); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+.top { border-bottom: 1px solid rgba(159, 180, 216, 0.15); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; font-size: 15px; }
+.brand img { width: 34px; height: 34px; border-radius: 50%; }
+.links a { margin-left: 18px; color: var(--muted); text-decoration: none; font-size: 15px; }
+.links a[aria-current="page"], .links a:hover { color: var(--light); }
+.hero { text-align: center; padding: 28px 0 8px; }
+.banner { width: 100%; border-radius: 14px; display: block; box-shadow: 0 0 60px rgba(255, 181, 71, 0.08); }
+h1 { font-weight: 600; letter-spacing: 0.04em; margin: 28px 0 4px; }
+.hero h1 { letter-spacing: 0.3em; text-transform: uppercase; font-size: 30px; }
+.tag { color: var(--rain); letter-spacing: 0.2em; text-transform: uppercase; font-size: 14px; margin: 0 0 24px; }
+.channels { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 18px 0 30px; }
+.channels a {
+  display: flex; flex-direction: column; align-items: center; min-width: 170px; padding: 12px 18px;
+  border: 1px solid rgba(255, 226, 168, 0.25); border-radius: 12px; text-decoration: none; color: var(--text);
+  background: rgba(4, 5, 10, 0.5);
+}
+.channels a span { color: var(--muted); font-size: 14px; }
+.channels a:hover { border-color: var(--amber); }
+.about p, .legal p, .legal li { color: var(--text); }
+.legal { padding: 10px 0 40px; }
+.legal h2 { font-size: 20px; margin-top: 30px; color: var(--light); font-weight: 600; }
+.updated { color: var(--muted); font-size: 14px; }
+footer { border-top: 1px solid rgba(159, 180, 216, 0.15); margin-top: 40px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding: 22px 20px; color: var(--muted); font-size: 14px; }
